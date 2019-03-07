@@ -24,7 +24,7 @@ public class HelloController {
         return dongleRepository.findAll();
     }
 
-    @GetMapping(value="/{space}")
+    @GetMapping(value="/space/{space}")
     public Dongle findBySpace(@PathVariable final String space){
         return dongleRepository.findBySpace(space);
     }
